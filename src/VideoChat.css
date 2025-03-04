@@ -1,0 +1,44 @@
+.video-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    height: 600px; /* Adjust as needed */
+  }
+  
+  .video-container video,
+  .video-container canvas {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .video-container .controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .video-container .controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  
+  .video-container .controls button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
